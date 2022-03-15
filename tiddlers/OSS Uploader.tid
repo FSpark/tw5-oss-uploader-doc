@@ -1,0 +1,31 @@
+created: 20220315124010703
+modified: 20220315132356374
+tags: 
+title: OSS Uploader
+type: text/vnd.tiddlywiki
+
+\define plugin() $:/plugins/FSpark/file-uploads-Aliyun-OSS
+
+<$tiddler tiddler=<<plugin>> >
+
+|!Version |{{!!version}} |
+|!Build date |<$view field="created" format="date" template="MMM DDth, YYYY" /> |
+|!TW5 compatibility |{{!!core-version}} |
+
+!! 说明
+为 TiddlyWiki5 增加[[阿里云对象存储OSS(Object Storage Service)|AliCloud OSS]]支持。
+
+减轻[[TiddlyWIki|TiddlyWiki5]]单文件不可承受之重。
+
+!! 使用前注意
+*此插件依赖[[File Uploads|$:/plugins/commons/file-uploads]]和[[Relink|$:/plugins/flibbles/relink]]插件
+*此插件仍是实验性的且处于测试阶段
+*[[阿里OSS|AliCloud OSS]]为付费服务，虽然个人使用花费很少
+*启用后会立即开始上传''包括之前所有''的二进制资源，并清空本地内容
+*虽然主要是当图床使用，但实际上可以上传任意二进制资源
+*未来考虑将[[图像资源管理功能]]单独拆分为插件以便支持其他图床
+
+
+!! 安装
+
+{{{ [<plugin>] ||DragToInstall}}}
