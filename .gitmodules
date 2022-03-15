@@ -1,0 +1,3 @@
+[submodule "plugins/FSpark/oss-uploader"]
+	path = plugins/FSpark/oss-uploader
+	url = git@fs.github.com:FSpark/tw5-oss-uploader.git

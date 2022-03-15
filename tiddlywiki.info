@@ -1,0 +1,61 @@
+{
+    "description": "Basic client-server edition",
+    "plugins": [
+        "tiddlywiki/tiddlyweb",
+        "tiddlywiki/filesystem",
+        "tiddlywiki/pluginlibrary",
+        "tiddlywiki/highlight",
+		"tiddlywiki/markdown",
+        "flibbles/relink",
+        "FSpark/oss-uploader"
+    ],
+    "themes": [
+        "tiddlywiki/vanilla",
+        "tiddlywiki/snowwhite"
+    ],
+    "build": {
+        "index": [
+            "--rendertiddler",
+            "$:/plugins/tiddlywiki/tiddlyweb/save/offline",
+            "index.html",
+            "text/plain"
+        ],
+        "static": [
+            "--rendertiddler",
+            "$:/core/templates/static.template.html",
+            "static.html",
+            "text/plain",
+            "--rendertiddler",
+            "$:/core/templates/alltiddlers.template.html",
+            "alltiddlers.html",
+            "text/plain",
+            "--rendertiddlers",
+            "[!is[system]]",
+            "$:/core/templates/static.tiddler.html",
+            "static",
+            "text/plain",
+            "--rendertiddler",
+            "$:/core/templates/static.template.css",
+            "static/static.css",
+            "text/plain"
+        ],
+        "library": [
+            "--makelibrary",
+            "$:/UpgradeLibrary",
+            "--savelibrarytiddlers",
+            "$:/UpgradeLibrary",
+            "[prefix[$:/plugins/]!prefix[$:/plugins/tiddlywiki/]!prefix[$:/languages/]!prefix[$:/themes/tiddlywiki/]!tag[$:/tags/PluginLibrary]]",
+            "recipes/library/tiddlers/",
+            "$:/UpgradeLibrary/List",
+            "--savetiddler",
+            "$:/UpgradeLibrary/List",
+            "recipes/library/tiddlers.json",
+            "--rendertiddler",
+            "$:/plugins/tiddlywiki/pluginlibrary/library.template.html",
+            "index.html",
+            "text/plain",
+            "--deletetiddlers",
+            "[[$:/UpgradeLibrary]][[$:/UpgradeLibrary/List]]"
+        ]
+    }
+}

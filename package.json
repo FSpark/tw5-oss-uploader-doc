@@ -1,0 +1,30 @@
+{
+  "name": "tw5-oss-uploader-doc",
+  "version": "1.0.0",
+  "description": "tw5-oss-uploader-doc",
+  "main": "index.js",
+  "scripts": {
+    "server": "npx cross-env TIDDLYWIKI_PLUGIN_PATH='./plugins' TIDDLYWIKI_THEME_PATH='./themes' TIDDLYWIKI_LANGUAGE_PATH='./languages' npx tiddlywiki . --listen port=8080",
+    "build-static": "node ./node_modules/tiddlywiki/tiddlywiki.js . --build static",
+    "build": "npx cross-env TIDDLYWIKI_PLUGIN_PATH='./plugins' TIDDLYWIKI_THEME_PATH='./themes' TIDDLYWIKI_LANGUAGE_PATH='./languages' npx tiddlywiki . --output docs --build index",
+    "build-library": "npx cross-env TIDDLYWIKI_PLUGIN_PATH='./plugins' TIDDLYWIKI_THEME_PATH='./themes' TIDDLYWIKI_LANGUAGE_PATH='./languages' npx tiddlywiki . --output docs/library --build library"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FSpark/tw5-oss-uploader-doc.git"
+  },
+  "keywords": [
+    "TW5",
+    "TW5-plugins",
+    "TiddlyWiki"
+  ],
+  "author": "FSpark",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/FSpark/tw5-oss-uploader-doc/issues"
+  },
+  "homepage": "https://github.com/FSpark/tw5-oss-uploader-doc#readme",
+  "dependencies": {
+    "tiddlywiki": "^5.2.1"
+  }
+}
