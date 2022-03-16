@@ -1,0 +1,21 @@
+created: 20220316095311063
+modified: 20220316095447618
+tags: $:/tags/Macro
+title: Fold Macro
+type: text/vnd.tiddlywiki
+
+\define fold(tiddler, summary)
+<$set name="title" value="$summary$" emptyValue="$tiddler$">
+<details class="fold" open><summary><<title>></summary>
+<$transclude tiddler="$tiddler$" mode="block" />
+</details>
+</$set>
+\end
+
+\define folded(tiddler, summary)
+<$set name="title" value="$summary$" emptyValue="$tiddler$">
+<details class="fold"><summary><<title>></summary>
+<$transclude tiddler="$tiddler$" mode="block" />
+</details>
+</$set>
+\end

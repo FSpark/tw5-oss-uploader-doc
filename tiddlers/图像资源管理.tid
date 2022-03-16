@@ -1,0 +1,23 @@
+created: 20220316085007226
+modified: 20220316090820613
+title: 图像资源管理
+type: text/vnd.tiddlywiki
+
+目前很简陋，测试功能完善中。。
+
+
+!! 图像反链
+找出当前Tiddler所引用的所有图片资源，同时也可以根据Relink插件在Info面板提供的Relink References功能找出图片被引用的所有Tiddler。
+
+!! 图像上传
+除了拖入，粘贴，还在编辑工具栏提供了上传按钮，方便移动端用户。
+
+!! 图像删除
+同时删除OSS上的源文件。
+
+!! 图像压缩
+默认开启。依托于[[Compressor.js|https://fengyuanchen.github.io/compressorjs/]]实现，其实能做到的事不止压缩。
+
+您可以简单地设置图片质量`quality` 从`0.1`到`1`不等。
+
+压缩时会将设置json文件转换为对象传入参数调用，所以详细设置请参阅[[Compressorjs文档|https://github.com/fengyuanchen/compressorjs]]

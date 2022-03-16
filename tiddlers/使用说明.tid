@@ -1,6 +1,22 @@
 created: 20220315135259109
-modified: 20220315135453582
+modified: 20220316102732162
 title: 使用说明
 type: text/vnd.tiddlywiki
 
-建设中...
+您可以试着依照以下步骤在本网页体验，放心，本网页为静态页面，不会上传和保留任何与您有关的信息。
+
+!! 1. [[配置OSS]]
+
+!! 2. 填入设置
+
+依据您的设置，最终图片的外链格式为
+
+`https://<<Bucket>>.<<Region>>.aliyuncs.com/<<Path>>/<<Filename>>`
+
+将以上信息填入[[设置|$:/plugins/FSpark/file-uploads-Aliyun-OSS/settings]]的对应位置。
+
+!! 3. 启用插件
+
+在[[File Uploads|$:/plugins/commons/file-uploads/settings]]设置中选定`Aliyun-OSS`作为上传器。
+
+!! 4. 随便导入点图片试试吧！

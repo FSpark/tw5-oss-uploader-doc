@@ -1,0 +1,24 @@
+created: 20220316095458297
+modified: 20220316095540806
+tags: $:/tags/StyleSheet
+title: Fold CSS
+type: text/vnd.tiddlywiki
+
+.fold[open] {
+  border-bottom: 2px solid #eee;
+  background-image: linear-gradient(#eee, transparent 100px);
+}
+
+.fold > summary {
+  display: list-item;
+  background-color: #eee;
+  padding: 4px 6px;
+}
+
+.fold > summary:hover {
+  cursor: pointer;
+}
+
+.fold[open] > summary {
+  background-color: transparent;
+}
