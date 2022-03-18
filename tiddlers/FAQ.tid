@@ -1,0 +1,31 @@
+created: 20220318124406652
+modified: 20220318141204852
+title: FAQ
+type: text/vnd.tiddlywiki
+
+!! 0. 为啥是OSS？
+根据多年来使用图床的经验而落脚的，图床的真谛在于长治久安。申明一点不是给阿里打广告。
+
+微博有防盗链，小众个人图床易跑路。
+
+Github必须是公开库， 访问也不稳定。使用jsDelivr加速对仓库有大小限制，前段时间还被Ban。
+
+所以干脆花点小钱图个安稳了。当然还有腾讯COS，Amazon S3等等也是不错的选择。
+
+目录结构明了，对于后期备份和转移也是很方便的，可定期使用[[命令行工具ossutil|https://help.aliyun.com/document_detail/50451.html]]或[[Rclone|https://rclone.org/]]。
+
+!! 1. 我想使用Filter过滤上传的文件
+
+目前暂时使用 [[File Uploads|$:/plugins/commons/file-uploads]] 的设置：[[$:/config/fileUploadFilter]]
+
+!! 2. 我该如何找到所有在OSS上传的文件？
+
+所有经过OSS Uploader上传的文件均已打上`AliyunAssets`标签
+
+!! 3. 有计划支持其他图床吗？
+
+有，OSS只是最初的尝试，终极目标是做成TiddlyWiki上的PicGo，让上传图片像呼吸般自由。然而实际情况是这个人很懒，催催ta可能有奇效(bushi
+
+!! 4. 我要反馈Bug
+
+来[[Github issues |https://github.com/FSpark/tw5-oss-uploader/issues]]

@@ -1,10 +1,14 @@
 created: 20220316090933336
-modified: 20220316102607306
+modified: 20220318134937754
 tags: 使用说明
 title: 配置OSS
 type: text/vnd.tiddlywiki
 
 !! 1. 了解阿里OSS基本概念
+!!! 太长不看
+就想象成个按流量和所占存储空间按需收费的网盘就行了，下面所用的参数都是为了操作认证和确定今后所上传资源的直链域名。
+
+!!! 继续了解
 [[基本概念|https://help.aliyun.com/document_detail/31827.html]]
 
 ;  存储空间（Bucket）

@@ -1,5 +1,5 @@
 created: 20220315124010703
-modified: 20220316101852207
+modified: 20220318134400342
 tags: 
 title: OSS Uploader
 type: text/vnd.tiddlywiki
@@ -20,14 +20,17 @@ type: text/vnd.tiddlywiki
 !! [[使用说明]]
 
 !! 使用前注意
-*此插件依赖[[File Uploads|$:/plugins/commons/file-uploads]]和[[Relink|$:/plugins/flibbles/relink]]插件，请先安装好
-*此插件仍是实验性的且处于测试阶段
-*[[阿里OSS|AliCloud OSS]]为付费服务，虽然个人使用花费很少
-*启用后会立即开始上传''包括之前所有''的二进制资源，并清空本地内容
-*虽然主要是当图床使用，但实际上可以上传任意二进制资源
-*未来考虑将[[图像资源管理]]单独拆分为插件以便支持其他图床
+*此插件依赖[[File Uploads|$:/plugins/commons/file-uploads]]和[[Relink|$:/plugins/flibbles/relink]]插件，请先安装好。
+*此插件仍是''实验性''的且处于''测试''阶段，@@color:red;font-weight: bold;  务必先做好备份！！@@
+*[[阿里OSS|AliCloud OSS]]为付费服务，虽然个人使用花费很少。
+*启用后会立即开始上传''包括之前所有''的二进制资源，并清空本地内容，以实现瘦身。
+*虽然主要是当图床使用，但实际上可以上传任意二进制资源。
+*建议使用时关闭自动保存，否则在Node托管的情况下会消耗双倍流量以及出现413错误。
+*未来考虑将[[图像资源管理]]单独拆分为插件以便支持其他图床。
 
+!! [[FAQ]]
 
 !! 安装
 
 {{{ [<plugin>] ||DragToInstall}}}
+

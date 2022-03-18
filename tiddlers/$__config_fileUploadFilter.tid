@@ -1,0 +1,6 @@
+created: 20220318130922916
+modified: 20220318130935384
+title: $:/config/fileUploadFilter
+type: text/vnd.tiddlywiki
+
+[all[tiddlers]is[binary]!is[draft]!has[_canonical_uri]] :filter[get[text]length[]compare:integer:gteq[100000]] -[tag[DemoUse]]
