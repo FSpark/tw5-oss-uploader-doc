@@ -1,18 +1,19 @@
 created: 20220318124406652
-modified: 20220318141204852
+modified: 20220322161127806
 title: FAQ
 type: text/vnd.tiddlywiki
 
 !! 0. 为啥是OSS？
 根据多年来使用图床的经验而落脚的，图床的真谛在于长治久安。申明一点不是给阿里打广告。
 
-微博有防盗链，小众个人图床易跑路。
+* 微博有防盗链，小众个人图床易跑路。
 
-Github必须是公开库， 访问也不稳定。使用jsDelivr加速对仓库有大小限制，前段时间还被Ban。
+* Github必须是公开库， 访问也不稳定。使用jsDelivr加速对仓库有大小限制，前段时间还被Ban。
+
+* 目录结构明了，对于后期备份和转移也是很方便的，可定期使用[[命令行工具ossutil|https://help.aliyun.com/document_detail/50451.html]]或[[Rclone|https://rclone.org/]]。
 
 所以干脆花点小钱图个安稳了。当然还有腾讯COS，Amazon S3等等也是不错的选择。
 
-目录结构明了，对于后期备份和转移也是很方便的，可定期使用[[命令行工具ossutil|https://help.aliyun.com/document_detail/50451.html]]或[[Rclone|https://rclone.org/]]。
 
 !! 1. 我想使用Filter过滤上传的文件
 
