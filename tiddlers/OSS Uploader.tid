@@ -1,5 +1,5 @@
 created: 20220315124010703
-modified: 20220318134400342
+modified: 20220328123515879
 tags: 
 title: OSS Uploader
 type: text/vnd.tiddlywiki
@@ -25,10 +25,12 @@ type: text/vnd.tiddlywiki
 *[[阿里OSS|AliCloud OSS]]为付费服务，虽然个人使用花费很少。
 *启用后会立即开始上传''包括之前所有''的二进制资源，并清空本地内容，以实现瘦身。
 *虽然主要是当图床使用，但实际上可以上传任意二进制资源。
-*建议使用时关闭自动保存，否则在Node托管的情况下会消耗双倍流量以及出现413错误。
+*建议使用时关闭自动保存，否则在Node托管的情况下会消耗双倍流量以及出现[[413错误]]。
 *未来考虑将[[图像资源管理]]单独拆分为插件以便支持其他图床。
 
 !! [[FAQ]]
+
+!![[Github|https://github.com/FSpark/tw5-oss-uploader]]
 
 !! 安装
 

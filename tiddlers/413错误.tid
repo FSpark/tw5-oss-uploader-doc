@@ -1,0 +1,6 @@
+created: 20220328122040386
+modified: 20220328122120795
+title: 413错误
+type: text/vnd.tiddlywiki
+
+实际上是由于使用Nginx反代，而Nginx默认上传大小为1MB的缘故

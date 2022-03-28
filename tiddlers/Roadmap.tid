@@ -1,10 +1,10 @@
 created: 20220322155724932
-modified: 20220322162009130
+modified: 20220328122816090
 tags: 
 title: Roadmap
 type: text/vnd.tiddlywiki
 
-（画饼）
+（画饼，不分先后）
 
 * ACL控制
 ** 使用ACL实现对于访问资源的权限控制，使得外人获取外链也访问不到资源
@@ -12,3 +12,9 @@ type: text/vnd.tiddlywiki
 
 * OCR识别
 ** 对于上传的图调用OCR识别服务，将识别后的文本存入text字段，供搜索查阅
+
+* 下载回本地
+** 对于导出完全离线的html是必不可少的选项，分外置文件夹和内嵌
+
+* 与未来编辑器整合
+** 与CME和正在开发中的Monaco，Slate编辑器整合
